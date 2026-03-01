@@ -1,6 +1,6 @@
 # Day 1
 
-## k8s Deployment script
+## Kubernetes Deployment script
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -25,9 +25,20 @@ spec:
             - containerPort: 80
 ```
 
-
-
-
+# Service
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-service
+spec:
+  type: ClusterIP        # default
+  selector:
+    app: my-app          # MUST match pod labels
+  ports:
+    - port: 80           # service port
+      targetPort: 8080   # container port
+```
 
 ## Terraform
 ```
