@@ -1,7 +1,7 @@
-Day 1
+#Day 1
 
-k8s Deployment script
-
+##k8s Deployment script
+```
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -23,32 +23,13 @@ spec:
           image: nginx:1.25
           ports:
             - containerPort: 80
-
-kind: Deployment
-apiVersion: apps/v1
-metadata:
-      name: mydeploy
-      namespace: mynamespace
-spec:
-   replicas: 3
-   selector:
-      matchLabels:
-        app: myapp
-   template:
-     metadata:
-       labels:
-         app: myapp
-
-     spec:
-      containers:
-       - name: mycont
-         image: nginx
-         ports:
-          - containerPort: 80
-
-
 ```
-Terraform
+
+
+
+
+
+##Terraform
 ```
 terraform{
   required_providers{
@@ -67,5 +48,5 @@ resource"azurerm_resource_group" "RG"{
   name="MyRg"
   location="central india"
 }
-```
+
 ```
