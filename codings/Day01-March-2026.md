@@ -1,6 +1,6 @@
-#Day 1
+# Day 1
 
-##k8s Deployment script
+## k8s Deployment script
 ```
 apiVersion: apps/v1
 kind: Deployment
@@ -29,7 +29,7 @@ spec:
 
 
 
-##Terraform
+## Terraform
 ```
 terraform{
   required_providers{
@@ -49,4 +49,32 @@ resource"azurerm_resource_group" "RG"{
   location="central india"
 }
 
+```
+
+## Jenkins
+
+```
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/user/repo.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building application'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Running tests'
+            }
+        }
+    }
+}
 ```
