@@ -1,10 +1,12 @@
-What do i learnt today
+## What do i learnt today
 
+```
 Practiced multiple  linux commands for 2 hours 
 
-learned some aws
- about 
+learned about  aws
+
+topics:
  iam 
  and ec2
 
-
+```
