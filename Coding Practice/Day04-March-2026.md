@@ -43,6 +43,6 @@ NACL → subnet-level firewall
 ```
 
 ## Interview line
-``
+```
 A VPC provides network isolation and allows you to define your own IP addressing, routing, and security within AWS.
 ```
