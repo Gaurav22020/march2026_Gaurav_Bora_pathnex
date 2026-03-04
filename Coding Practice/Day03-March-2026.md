@@ -21,7 +21,7 @@ Policy → JSON document defining permissions (Allow/Deny actions on resources).
 ```
 
 ## One simple example
-``
+```
 A developer needs to upload files to S3 but should not delete buckets.
 
 You create:
